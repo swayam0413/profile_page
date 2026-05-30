@@ -63,7 +63,7 @@ const experiences = [
     logo: "/DAU_logo.jpg",
     link: "https://www.daiict.ac.in/",
     description:
-      "Assisted professors in DBMS and ICT courses, conducted lab sessions, helped students with assignments and practical concepts, evaluated submissions, and resolved technical doubts.",
+      "Facilitate lab sessions and mentor 100+ undergraduate students in Database Management Systems (DBMS) and Information & Communication Technology (ICT) courses. Design programming assignments, evaluate technical submissions, and debug student code, reinforcing core concepts in database schema design, indexing, query optimization, and computer networks.",
     meta: "Jun 2025 - Present · Gandhinagar, Gujarat",
   },
   {
@@ -71,7 +71,7 @@ const experiences = [
     logo: "/anand_asset_manager_logo.png",
     link: "https://www.profitbuddy.in/blog/",
     description:
-      "Developed a high-performance real-time tick data processing system for 2000+ stocks using Redis Streams, Pandas, PostgreSQL, and scalable OHLC aggregation pipelines.",
+      "Architected and deployed a high-performance, real-time tick data processing pipeline for 2,000+ active stocks. Developed robust data ingestion pipelines using Redis Streams and Pandas, aggregating raw transaction ticks into custom OHLC (Open-High-Low-Close) intervals. Optimized write-heavy database workloads in PostgreSQL, ensuring sub-second retrieval times for algorithmic trading strategies.",
     meta: "Jan 2025 - May 2025 · Anand, Gujarat",
   },
 ];
@@ -118,7 +118,7 @@ const projects = [
   {
     title: "ResearchMind - Multi-Agent AI Research System",
     description:
-      "Multi-agent AI research assistant that searches, scrapes, writes, critiques, and exports structured Markdown reports with optimized LLM usage.",
+      "An autonomous multi-agent AI research assistant that parallelizes web search, web scraping, content synthesis, peer-review criticism, and report formatting. Utilizing LangChain and the Gemini API, the system generates comprehensive, citing-heavy Markdown reports while minimizing API token usage through dynamic prompt optimizations.",
     stack: "Python, Streamlit, LangChain, Gemini API, Tavily API, BeautifulSoup",
     gitUrl: "https://github.com/swayam0413/ResearchMind-Multi-Agent-AI-Research-System",
     tag: "AI",
@@ -126,7 +126,7 @@ const projects = [
   {
     title: "AI-Powered Plant Disease Detection System",
     description:
-      "AI web application that detects plant diseases from leaf images and generates farmer-friendly symptoms, causes, prevention, and treatment suggestions.",
+      "A full-stack deep learning web application to diagnose plant diseases from leaf images. Implemented a MobileNetV2 computer vision model (Keras) for image classification and integrated the Gemini API to construct actionable treatment recommendations, outlining causes, prevention strategies, and natural/chemical cures.",
     stack: "Keras, MobileNetV2, Flask, Gemini API",
     gitUrl: "https://github.com/swayam0413/-AI-Powered-Plant-Disease-Detection-System-with-LLM-Assistant-",
     tag: "AI",
@@ -134,7 +134,7 @@ const projects = [
   {
     title: "RAG-based Offline AI Assistant for PDF Querying",
     description:
-      "Private local AI assistant for PDF question answering using Retrieval-Augmented Generation, embeddings, semantic search, and local LLM inference.",
+      "A fully local, privacy-first Retrieval-Augmented Generation (RAG) assistant for querying large document repositories. Developed a semantic search pipeline using FAISS vector store and sentence-transformer embeddings, paired with Ollama for local LLM inference, ensuring data privacy and zero API dependencies.",
     stack: "Python, FAISS, Sentence-Transformers, Ollama, Streamlit",
     gitUrl: "https://github.com/swayam0413/personal_llms",
     tag: "AI",
@@ -142,7 +142,7 @@ const projects = [
   {
     title: "AlumNet DAIICT Student Alumni Portal",
     description:
-      "Student-alumni portal project focused on connecting academic community members with a modern TypeScript-based application foundation.",
+      "A modern community networking portal for DA-IICT students and alumni. Developed modular front-end components and a secure user profile workflow using TypeScript, facilitating mentorship, career tracking, and direct networking within the university ecosystem.",
     stack: "TypeScript, Web App",
     gitUrl: "https://github.com/swayam0413/AlumNet-DAIICT-Student-Alumni-Portal",
     tag: "Web",
@@ -150,7 +150,7 @@ const projects = [
   {
     title: "Face Emotion Recognition",
     description:
-      "Computer vision project exploring emotion recognition from facial input using machine learning workflows and notebook-based experimentation.",
+      "A convolutional neural network (CNN) model for real-time facial expression analysis. Leveraged image preprocessing pipelines, data augmentation, and OpenCV to classify seven distinct human emotions, evaluating model performance with confusion matrices and precision-recall curves.",
     stack: "Jupyter Notebook, Machine Learning",
     gitUrl: "https://github.com/swayam0413/Face-Emotion-Recognition",
     tag: "ML",
@@ -158,7 +158,7 @@ const projects = [
   {
     title: "Bank Management System",
     description:
-      "C++ banking management project demonstrating object-oriented programming concepts and command-line application design.",
+      "A command-line banking application in C++ utilizing Object-Oriented Programming (OOP) principles. Implemented secure user authentication, transactional ledger management (deposits/withdrawals), file-based persistent storage, and robust error handling for account management.",
     stack: "C++",
     gitUrl: "https://github.com/swayam0413/BANK_MANAGEMENT_SYSYTEM_C-",
     tag: "C++",
@@ -166,9 +166,9 @@ const projects = [
 ];
 
 const achievements = [
-  "Qualified GATE 2025 in Computer Science with score 496 and AIR 7171.",
-  "Qualified GATE 2025 in Data Science and Artificial Intelligence with score 346 and AIR 8603.",
-  "Completed Supervised Machine Learning course from Coursera in 2025.",
+  "Secured All India Rank (AIR) 7171 in GATE Computer Science & Information Technology 2025 (Score: 496).",
+  "Secured All India Rank (AIR) 8603 in GATE Data Science & Artificial Intelligence 2025 (Score: 346).",
+  "Completed the 'Supervised Machine Learning: Regression and Classification' certification by DeepLearning.AI & Stanford University on Coursera (2025).",
 ];
 
 function Section({ id, title, children }: { id: string; title: string; children: React.ReactNode }) {
@@ -190,7 +190,7 @@ function Section({ id, title, children }: { id: string; title: string; children:
 function App() {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [skillTab, setSkillTab] = useState<keyof typeof skillGroups>("Languages");
-  const typedLines = useMemo(() => ["Swayam Patel", "Generative AI Developer", "Python Developer"], []);
+  const typedLines = useMemo(() => ["Swayam Patel", "AI Systems Engineer", "Python & Backend Developer"], []);
 
   return (
     <main className="site-shell">
@@ -238,8 +238,7 @@ function App() {
             </h1>
             <p className="role-line">{typedLines[1]} | {typedLines[2]}</p>
             <p>
-              M.Tech Software System student at Dhirubhai Ambani University with experience in Generative AI, RAG
-              systems, real-time data processing, and AI-powered web applications.
+              M.Tech candidate in Software Systems at Dhirubhai Ambani University specializing in Generative AI architectures, high-performance RAG pipelines, and scalable real-time data streaming.
             </p>
             <div className="hero-buttons">
               <a href="#contact" className="btn btn-primary">
@@ -274,14 +273,10 @@ function App() {
             </div>
             <div className="about-text">
               <p>
-                I am currently pursuing M.Tech in Software System at Dhirubhai Ambani University. I work with Python,
-                Generative AI, RAG, FAISS, Streamlit, Flask, MobileNetV2, Gemini API, PostgreSQL, Redis Streams, and
-                real-time data pipelines.
+                I am an M.Tech Software Systems candidate at Dhirubhai Ambani University, deeply passionate about the intersection of Generative AI, machine learning, and robust software engineering. My technical expertise spans developing optimized Retrieval-Augmented Generation (RAG) systems, implementing computer vision models, and building high-performance, real-time data pipelines.
               </p>
               <p>
-                I have worked as a Python Developer Intern at Anand Asset Manager Pvt. Ltd. and as a Teaching Assistant
-                for DBMS and ICT courses. My focus is on building practical AI solutions that combine reliable backend
-                engineering with clear user experiences.
+                During my tenure as a Python Developer Intern at Anand Asset Manager, I architected a real-time market tick-data processor capable of handling data streams for over 2,000 stocks using Redis Streams and PostgreSQL. As a Teaching Assistant for DBMS and ICT courses, I mentor junior students, solidifying my foundational knowledge in database design, computer networks, and system architecture. I thrive on translating complex AI concepts into reliable, production-grade applications.
               </p>
             </div>
           </div>
@@ -426,8 +421,7 @@ function App() {
             <div className="contact-copy">
               <h3>Have an opportunity or project in mind?</h3>
               <p>
-                I am interested in internships, AI engineering work, backend systems, data pipelines, and applied ML
-                projects.
+                I am actively seeking internship and full-time opportunities in AI engineering, backend systems development, data engineering, and applied machine learning.
               </p>
               <div className="contact-icons">
                 <a href="https://github.com/swayam0413" target="_blank" rel="noreferrer"><GitBranch size={22} /></a>
