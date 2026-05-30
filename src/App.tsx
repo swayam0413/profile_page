@@ -266,7 +266,7 @@ function App() {
         <Section id="about" title="About Me">
           <div className="about-grid">
             <div className="about-images">
-              <img src="/profile-photo.svg" alt="Swayam Patel illustration" />
+              <img src="/photograph-removebg-preview_1].png" alt="Swayam Patel" />
               <div className="about-card">
                 <strong>Gandhinagar, Gujarat</strong>
                 <span>M.Tech Software System | DAU</span>
